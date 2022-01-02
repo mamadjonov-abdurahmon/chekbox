@@ -1,0 +1,117 @@
+.visually-hidden {
+ position: absolute;
+ width: 1px;
+ height: 1px;
+ margin: -1px;
+ padding: 0;
+ overflow: hidden;
+ border: 0;
+ clip: rect(0 0 0 0)
+}
+
+.container{
+ width: 1140px;
+ padding-right: 20px;
+ padding-left: 20px;
+ margin-right:  auto;
+ margin-left:  auto;
+}
+
+h1{
+ font-size: 40px;
+ align-items: center;
+ margin: 0 auto;
+ width: 500px;
+ margin-bottom: 50px;
+}
+
+.intro{
+ padding: 0px 320px;
+}
+
+.intro__box{
+ margin-bottom: 50px;
+ position: relative;
+}
+
+.intro__boxs{
+ display: flex;
+ align-items: center;
+}
+
+.intro__label{
+ margin-left: 50px;
+ display: flex ;
+ width: 250px;
+ align-items: center;
+ font-size: 45px;
+ justify-content: space-between;
+}
+
+
+
+.intro__label--intro{
+ display: flex ;
+ width: 250px;
+ align-items: center;
+ font-size: 45px;
+ justify-content: space-between;
+ color: #ccc;
+}
+
+.visually-hidden:checked ~ .intro__select{
+ background-image: url('../images/table-tennis.png');
+ background-size: 25px;
+ background-repeat: no-repeat;
+ background-position: calc(50%);
+}
+
+.visually-hidden ~ span{
+ position: absolute;
+ z-index: +1;
+ left: 00px;
+ display: block;
+ margin-left: 10px;
+ width: 30px ;
+ height: 30px;
+ border: 2px solid #000;
+ border-radius: 5px;
+}
+
+
+.visually-hidden:checked ~ .intro__select--Basketboall{
+ background-image: url('../images/basketball-ball.png');
+ background-size: 25px;
+ background-repeat: no-repeat;
+ background-position: calc(50%);
+}
+
+.visually-hidden:checked ~ .intro__select--Volleyball{
+ background-image: url('../images/volleyball-ball.png');
+ background-size: 25px;
+ background-repeat: no-repeat;
+ background-position: calc(50%);
+}
+
+.visually-hidden:checked ~ .intro__select--hokkay{
+ background-image: url('../images/hockey-puck.png');
+ background-size: 25px;
+ background-repeat: no-repeat;
+ background-position: calc(50%);
+ color: blue;
+}
+
+.intro__button{
+ padding: 10px 25px;
+ border-radius: 5px;
+ border: 2px solid #000;
+ background-color: darkcyan;
+ color: #fff;
+ position: absolute;
+ left: 375px;
+}
+
+.intro__button:hover{
+ opacity: 0.6;
+ color:#000;
+}
